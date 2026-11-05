@@ -1,1 +1,100 @@
 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LarpersX</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #080808 url("fundo.jpg") center center / cover fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 65px 15px 55px;
+}
+
+.logo {
+    font-size: clamp(42px, 10vw, 75px);
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -3px;
+    text-shadow: 0 0 20px #ffffff55;
+}
+
+.logo span {
+    color: #888;
+}
+
+.maps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.map {
+    height: 230px;
+    border: 2px solid #ddd;
+    border-radius: 22px;
+    background: #111a;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.map:hover {
+    background: #ffffff15;
+    border-color: white;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 55px 10px 40px;
+    }
+
+    .maps {
+        grid-template-columns: 1fr;
+        padding: 20px 25px;
+        gap: 18px;
+    }
+
+    .map {
+        height: 190px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Larpers<span>X</span></div>
+</header>
+
+<main class="maps">
+    <div class="map">01</div>
+    <div class="map">02</div>
+    <div class="map">03</div>
+</main>
+
+</body>
+</html>
